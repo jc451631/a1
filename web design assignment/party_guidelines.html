@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Party Guidelines</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+	function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+</script>
+</head>
+<body onLoad="run_first()">
+	<div id="wrapper">
+	<header>
+    	
+        
+<h1>COSSIEPLAY</h1>
+        
+    </header>
+    <nav>
+        	<ul>
+				<li><a href="index.html">HOME</a></li>                		
+                <li><a href="whatis.html.html">WHAT IS?</a></li>
+                <li><a href="designs.html">DESIGNS</a></li>
+                <li><a  href="specials.html">SPECIALS</a></li>
+                <li><a href="about_us.html">ABOUT US</a>
+ 				<li><a href="sign_up.html">SIGN UP</a></li>                
+				<li><a href="Gakkery.html">GALLERY</a></li>		
+                <li><a href="contact_us.html">CONTACT US</a></li>    
+                             
+                
+        </ul>
+        </nav>
+	<h1 id="main_h1"></h1>
+    
+    <section id="col3">
+    	<h2>Contact</h2>
+        <p>
+       <ul>
+       <li> CossiePlay party-goers party at their own risk and are responsible for their own safety. Check with your doctor before you party hard.</li>
+<li>Party fees must be paid at the door. Cash or EFTPOS accepted. Credit card payments attract a 2% surcharge. </li>
+<li>Alcohol is served at the bar to over 18s only.</li> 
+<li>No intoxicated persons will be served, but will be escorted to a taxi – paid by the party-goer. </li>
+</ul>
+
+
+
+        </p>
+      </section>
+   <footer><h3>Design By jc451631</h3>
+    		<h4 style="color:red" ><a href="party_guidelines.html">Party guidelines</a></h4></footer> 
+            </div>
+            <body>
+			</html>

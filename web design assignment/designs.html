@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Designs</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script>
+	function run_first() {
+		var id_var = sessionStorage.li_id;
+		if(id_var) {
+			document.getElementById(id_var).style.backgroundColor = "gray";
+		}
+	}
+	
+	function nav_li_selected(li_id) {	
+		for(i = 0; i < 6; i++) {
+			document.getElementById(i.toString()).style.backgroundColor = "";
+		}
+		document.getElementById(li_id.toString()).style.backgroundColor = "gray";
+		
+		//store li_id in sessionStorage
+		sessionStorage.li_id = li_id.toString();		
+	}
+</script>
+</head>
+<body onLoad="run_first()">
+	<div id="wrapper">
+	<header>
+    	
+        
+<h1>COSSIEPLAY</h1>
+        
+    </header>
+    <nav>
+        	<ul>
+				<li><a href="index.html">HOME</a></li>                		
+                <li><a href="whatis.html.html">WHAT IS?</a></li>
+                <li><a href="designs.html">DESIGNS</a></li>
+                <li><a  href="specials.html">SPECIALS</a></li>
+                <li><a href="about_us.html">ABOUT US</a>
+ 				<li><a href="sign_up.html">SIGN UP</a></li>                
+				<li><a href="Gakkery.html">GALLERY</a></li>		
+                <li><a href="contact_us.html">CONTACT US</a></li>     
+                             
+                
+                
+                
+      </ul>
+        </nav>
+	<h1 id="main_h1"></h1>
+    
+    <section id="col4">
+    	<h2>Prices</h2>
+        <p>
+         <ul>
+<li>         Costume	                      Size	Price    </li>
+<li >		Spiderman	                    12	$49          </li>
+<li >			Elf	                            16	$35      </li>
+<li >			Darth Vader	                    M	$149     </li>
+<li >			Iron Man (with rocket boots)	M	$2,500   </li>
+<li >			Bayonetta	                    8	$300     </li>
+<li >			Diablo III – Demon Hunter	    10	$250     </li>
+<li >			Harley Quinn	                18	$125     </li>
+<li >			Metroid – Samus Aran	        L	$850     </li>
+<li >			Peter Pan	                    XS	$49 	 </li>
+<li >			Princess Leia (White)	        10	$100	 </li>	
+<li >			Spock (Star Trek)	            S	$1,235   </li>
+	</ul>
+        </p>
+    </section>
+   <footer>
+    <h3>Design By jc451631</h3>
+    <h4 style="color:red" ><a href="party_guidelines.html">Party guidelines</a></h4></footer>  
+            </div>
+            <body>
+			</html>
